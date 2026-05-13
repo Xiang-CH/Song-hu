@@ -28,7 +28,6 @@
 [ext_resource type="Texture2D" uid="uid://dyj08qiudqmbr" path="res://assets/sprites/objects/item_fox_stone.png" id="30_2viwe"]
 [ext_resource type="Texture2D" uid="uid://c0oneeejtvye5" path="res://assets/sprites/effects/warm_light.png" id="31_4x4ny"]
 [ext_resource type="Texture2D" uid="uid://b83y0ekptbkoc" path="res://assets/sprites/effects/lantern_flame.png" id="32_nlewy"]
-[ext_resource type="Texture2D" uid="uid://b6e0gb3654xf" path="res://assets/sprites/effects/fox_fire.png" id="33_a1ics"]
 [ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="34_noyxt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2msp3"]
@@ -241,70 +240,6 @@ animations = [{
 "speed": 9.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_catv7"]
-atlas = ExtResource("33_a1ics")
-region = Rect2(0, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_22wx4"]
-atlas = ExtResource("33_a1ics")
-region = Rect2(128, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kk6xp"]
-atlas = ExtResource("33_a1ics")
-region = Rect2(256, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_t6p44"]
-atlas = ExtResource("33_a1ics")
-region = Rect2(384, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bn648"]
-atlas = ExtResource("33_a1ics")
-region = Rect2(512, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_owrre"]
-atlas = ExtResource("33_a1ics")
-region = Rect2(640, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2nrqj"]
-atlas = ExtResource("33_a1ics")
-region = Rect2(768, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ml5n4"]
-atlas = ExtResource("33_a1ics")
-region = Rect2(896, 0, 128, 128)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_giy80"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_catv7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_22wx4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kk6xp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_t6p44")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bn648")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_owrre")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2nrqj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ml5n4")
-}],
-"loop": true,
-"name": &"loop",
-"speed": 8.0
-}]
-
 [node name="Level1" type="Node2D" unique_id=195159930]
 script = ExtResource("1_o8s4s")
 level_width = 9600
@@ -355,7 +290,7 @@ tile_set = ExtResource("5_hvllt")
 [node name="OneWayPlatforms" type="Node2D" parent="." unique_id=1569994766]
 
 [node name="ForestOneWay" type="TileMapLayer" parent="OneWayPlatforms" unique_id=1022883357]
-tile_map_data = PackedByteArray("AAASAAMAAAAAAAIAAAATAAMAAAAAAAIAAAAUAAMAAAAAAAIAAAAVAAMAAAAAAAIAAAAWAAMAAAAAAAIAAAAXAAMAAAAAAAIAAAAYAAMAAAAAAAIAAAAnAAMAAAAAAAIAAAAoAAMAAAAAAAIAAAApAAMAAAAAAAIAAAAqAAMAAAAAAAIAAAArAAMAAAAAAAIAAAAsAAMAAAAAAAIAAAA=")
+tile_map_data = PackedByteArray("AAASAAMAAAAAAAIAAAATAAMAAAAAAAIAAAAUAAMAAAAAAAIAAAAVAAMAAAAAAAIAAAAWAAMAAAAAAAIAAAAXAAMAAAAAAAIAAAAYAAMAAAAAAAIAAAAfAAMAAAAAAAIAAAAgAAMAAAAAAAIAAAAhAAMAAAAAAAIAAAAiAAMAAAAAAAIAAAAjAAMAAAAAAAIAAAAkAAMAAAAAAAIAAAAiAAIAAAAAAAIAAAAjAAIAAAAAAAIAAAAkAAIAAAAAAAIAAAA=")
 tile_set = ExtResource("5_hvllt")
 
 [node name="PropsBack" type="Node2D" parent="." unique_id=1367802425]
@@ -367,13 +302,13 @@ centered = false
 offset = Vector2(-64, -256)
 
 [node name="StoneLantern_ForestBend" type="Sprite2D" parent="PropsBack" unique_id=15310042]
-position = Vector2(4200, 512)
+position = Vector2(3694, 556)
 texture = ExtResource("6_dp4fg")
 centered = false
 offset = Vector2(-64, -256)
 
 [node name="StoneLantern_AltarApproach" type="Sprite2D" parent="PropsBack" unique_id=678517906]
-position = Vector2(7900, 512)
+position = Vector2(6407, 559)
 texture = ExtResource("6_dp4fg")
 centered = false
 offset = Vector2(-64, -256)
@@ -384,14 +319,8 @@ texture = ExtResource("7_svqqs")
 centered = false
 offset = Vector2(-192, -448)
 
-[node name="ToriiLarge_OldTorii" type="Sprite2D" parent="PropsBack" unique_id=1192078690]
-position = Vector2(3920, 512)
-texture = ExtResource("8_2to4m")
-centered = false
-offset = Vector2(-320, -576)
-
 [node name="ToriiLarge_AltarGate" type="Sprite2D" parent="PropsBack" unique_id=869082473]
-position = Vector2(9040, 512)
+position = Vector2(7346, 573)
 texture = ExtResource("8_2to4m")
 centered = false
 offset = Vector2(-320, -576)
@@ -426,12 +355,13 @@ tablet_text = "山中有狐，不可直呼其名。若狐回首，莫再唤它�
 speaker_name = "札记"
 
 [node name="Sprite2D" type="Sprite2D" parent="Narrative/Tablet_Torii" unique_id=747269606]
+position = Vector2(-528, 159)
 texture = ExtResource("12_wtkl1")
 centered = false
 offset = Vector2(-96, -256)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Narrative/Tablet_Torii" unique_id=1616116756]
-position = Vector2(0, -116)
+position = Vector2(-525, 34)
 shape = SubResource("RectangleShape2D_o06sk")
 
 [node name="Tablet_Order" type="Area2D" parent="Narrative" unique_id=894316302]
@@ -441,24 +371,25 @@ tablet_text = "祭坛从下至上读取供物。后取得的供物会压在更�
 speaker_name = "札记"
 
 [node name="Sprite2D" type="Sprite2D" parent="Narrative/Tablet_Order" unique_id=126426349]
+position = Vector2(-1022, 35)
 texture = ExtResource("12_wtkl1")
 centered = false
 offset = Vector2(-96, -256)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Narrative/Tablet_Order" unique_id=1712380860]
-position = Vector2(0, -116)
+position = Vector2(-1025, -90)
 shape = SubResource("RectangleShape2D_oubbf")
 
 [node name="Altar" parent="Narrative" unique_id=2078431511 instance=ExtResource("13_ovy75")]
-position = Vector2(8840, 512)
+position = Vector2(6759, 560)
 
 [node name="FoxSpawnMarker" type="Marker2D" parent="Narrative" unique_id=922235557]
-position = Vector2(8540, 420)
+position = Vector2(7279, 418)
 
 [node name="Actors" type="Node2D" parent="." unique_id=1466141016]
 
 [node name="Player" parent="Actors" unique_id=1788707675 instance=ExtResource("15_ugk5q")]
-position = Vector2(-314, 523)
+position = Vector2(181, 551)
 
 [node name="Mechanisms" type="Node2D" parent="." unique_id=2065666536]
 
@@ -496,12 +427,13 @@ open_texture = ExtResource("23_7tcdn")
 scale = Vector2(0.58, 0.58)
 
 [node name="ChestSprite" type="Sprite2D" parent="Mechanisms/WhiteFurChest/Visual" unique_id=1707831508]
+position = Vector2(-841.3794, 177.58623)
 texture = ExtResource("22_to6s4")
 centered = false
 offset = Vector2(-192, -358)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mechanisms/WhiteFurChest" unique_id=1857062315]
-position = Vector2(0, -78)
+position = Vector2(-487, 31)
 shape = SubResource("RectangleShape2D_bakdn")
 
 [node name="MugwortGrassSource" type="Area2D" parent="Mechanisms" unique_id=37930445]
@@ -515,7 +447,7 @@ harvest_dialog = "你拨开湿草，从草堆里取出一束气味清烈的蓬�
 [node name="Visual" type="Node2D" parent="Mechanisms/MugwortGrassSource" unique_id=34738213]
 
 [node name="GrassPile" type="Sprite2D" parent="Mechanisms/MugwortGrassSource/Visual" unique_id=1998473233]
-position = Vector2(2, -37)
+position = Vector2(-846.99994, -161)
 scale = Vector2(1.6, 1.6)
 texture = ExtResource("25_y73h4")
 centered = false
@@ -524,24 +456,25 @@ region_enabled = true
 region_rect = Rect2(0, 512, 128, 128)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mechanisms/MugwortGrassSource" unique_id=1146942093]
-position = Vector2(-6, -136)
+position = Vector2(-852, -260)
 shape = SubResource("RectangleShape2D_mryc2")
 
 [node name="PropsFront" type="Node2D" parent="." unique_id=813677332]
 
 [node name="TopOfferingLongTable" type="Sprite2D" parent="PropsFront" unique_id=1096537273]
-position = Vector2(5730, 556)
+position = Vector2(5759, 583)
+scale = Vector2(0.5422867, 0.60698706)
 texture = ExtResource("26_yhfkw")
 centered = false
 offset = Vector2(-369.5, -229)
 
 [node name="TopOfferingBellFiberPreview" parent="PropsFront" unique_id=295111207 instance=ExtResource("27_klc0n")]
-position = Vector2(5560, 455)
+position = Vector2(5684, 499)
 item_id = "bell_fiber"
 item_texture = ExtResource("29_kr1sg")
 
 [node name="TopOfferingFoxStonePreview" parent="PropsFront" unique_id=1764014149 instance=ExtResource("27_klc0n")]
-position = Vector2(5890, 455)
+position = Vector2(5853, 495)
 item_id = "fox_stone"
 item_texture = ExtResource("30_2viwe")
 
@@ -554,13 +487,13 @@ texture = ExtResource("31_4x4ny")
 texture_scale = 1.1
 
 [node name="LanternLight_ForestBend" type="PointLight2D" parent="Lighting" unique_id=1024990509]
-position = Vector2(4200, 362)
+position = Vector2(3700, 312)
 energy = 0.26
 texture = ExtResource("31_4x4ny")
 texture_scale = 1.1
 
 [node name="LanternLight_AltarApproach" type="PointLight2D" parent="Lighting" unique_id=975880582]
-position = Vector2(7900, 362)
+position = Vector2(6545, 343)
 energy = 0.26
 texture = ExtResource("31_4x4ny")
 texture_scale = 1.1
@@ -578,22 +511,15 @@ centered = false
 offset = Vector2(-64, -128)
 
 [node name="LanternFlame_ForestBend" type="AnimatedSprite2D" parent="FX" unique_id=58552751]
-position = Vector2(4200, 362)
+position = Vector2(3693, 438)
 sprite_frames = SubResource("SpriteFrames_tw5hq")
 animation = &"loop"
 centered = false
 offset = Vector2(-64, -128)
 
 [node name="LanternFlame_AltarApproach" type="AnimatedSprite2D" parent="FX" unique_id=2022089023]
-position = Vector2(7900, 362)
+position = Vector2(6402, 437)
 sprite_frames = SubResource("SpriteFrames_3l8ie")
-animation = &"loop"
-centered = false
-offset = Vector2(-64, -128)
-
-[node name="FoxfireHint_OldTorii" type="AnimatedSprite2D" parent="FX" unique_id=2044398376]
-position = Vector2(4040, 392)
-sprite_frames = SubResource("SpriteFrames_giy80")
 animation = &"loop"
 centered = false
 offset = Vector2(-64, -128)
